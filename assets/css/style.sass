@@ -14,11 +14,12 @@ $link-hover-color: #FFA400
 .navigation
   height: $nav-height
   background: $nav-background
-  border-bottom: 3px solid $primary
+    //border-bottom: 3px solid $primary
   position: fixed
   top: 0
   width: 100%
   z-index: 1
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15)
 
 .brand
   position: absolute
@@ -224,22 +225,26 @@ section.main
 
 
 //Footer
+section.bottom
+  background-color: $nav-background
+  color: $background
+  a
+    text-decoration: none
+    color: $background
+
+  a:visited
+    text-decoration: none
+
+  a:hover
+    text-decoration: none
+
 .footer
-  margin: 0 auto
-  text-align: center
   max-width: $content-width
+  margin: 0 auto
   padding: 0 1em
-  .return
-    float: right
-    a
-      text-decoration: none
-      color: $font-color
+  p
+    display: inline-flex
 
-    a:visited
-      text-decoration: none
-
-    a:hover
-      text-decoration: none
-
-  .copyright
-    float: left
+.return
+  color: $background
+  float: right
