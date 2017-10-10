@@ -14,7 +14,7 @@ $link-hover-color: #FFA400
 .navigation
   height: $nav-height
   background: $nav-background
-  border-bottom: 3px solid $primary
+   //border-bottom: 3px solid $primary
   position: fixed
   top: 0
   width: 100%
@@ -178,9 +178,13 @@ body
     margin: 0
     display: grid
     grid-gap: 1em
-    .EC
-      color: $primary
-      font-size: 1.2em
+    .banner
+      width: 100vw
+      padding: 0
+      margin: 0
+      .EC
+        color: $primary
+        font-size: 1.2em
   @media screen and (min-width: $breakpoint)
     .grid-content
       margin: 0
@@ -193,7 +197,7 @@ body
         text-align: left
         justify-content: flex-end
         padding-left: 10px
-        border-bottom: 1px solid $font-color
+        margin: 0
         h3
           font-size: 18px
           padding-left: 10px
@@ -203,7 +207,7 @@ body
 section.main
   max-width: $content-width
   margin: 0 auto
-  padding: 10px
+
 
 .article
   position: relative
