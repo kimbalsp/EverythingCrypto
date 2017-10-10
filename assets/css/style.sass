@@ -1,6 +1,6 @@
 $primary: #FFA400
 $secondary: #009FFD
-$background: #EAF6FF
+$background: #f1f1f1
 $font-color: #232528
 $content-width: 1000px
 $breakpoint: 800px
@@ -152,11 +152,11 @@ nav
 
 // Page content
 body
-  padding-top: 80px
+  padding-top: 70px
   margin: 0
   font-family: sans-serif
-  background-color: $background
   color: $font-color
+  background-color: $background
 
 .main
   margin: 0
@@ -213,21 +213,24 @@ section.main
     display: block
     margin: none
     padding: none
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3)
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.50)
 
   figcaption
     font: #f5f5f5
-    font-size: .5em
+    font-size: .7em
     position: absolute
     top: 0
     bottom: 0
     left: 0
     right: 0
     display: flex
-    align-items: center
+    flex-direction: column
     justify-content: center
+    align-items: center
     opacity: 0
     background-color: rgba(20 , 20, 20, .6)
+    h3
+      text-align: center
 
   &:hover figcaption
     opacity: 1
